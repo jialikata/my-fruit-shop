@@ -1,0 +1,47 @@
+public class FruitsBasket {
+    Fruit apple;
+    Fruit strawberry;
+    Fruit mango;
+
+    public FruitsBasket() {
+        this.apple = new Fruit(8);
+        this.strawberry = new Fruit(13);
+        this.mango = new Fruit(20);
+    }
+
+    public void setAppleWeight(int weight) {
+        apple.setWeight(weight);
+    }
+
+    public void setStrawberryWeight(int weight) {
+        strawberry.setWeight(weight);
+    }
+
+    public void setMangoWeight(int weight) {
+        mango.setWeight(weight);
+    }
+
+    public void setAppleDiscound(double discound) {
+        apple.setDiscount(discound);
+    }
+
+    public void setStrawberryDiscound(double discound) {
+        strawberry.setDiscount(discound);
+    }
+
+    public void setMangoDiscound(double discound) {
+        mango.setDiscount(discound);
+    }
+
+    public double calculatePrice() {
+        return apple.calculatePrice() + strawberry.calculatePrice() + mango.calculatePrice();
+    }
+
+    public double calculatePriceWithPromotion(int threshold, double discountAmount) {
+        double price = calculatePrice();
+        if (price >= threshold) {
+            return price - discountAmount;
+        }
+        return price;
+    }
+}
