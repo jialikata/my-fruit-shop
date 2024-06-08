@@ -1,13 +1,13 @@
 public class Fruit {
     private double pricePerJin;
-    private int weight;
+    private double weight;
     private double discount = 1.0;
 
     public Fruit(double pricePerJin) {
         this.pricePerJin = pricePerJin;
     }
 
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
