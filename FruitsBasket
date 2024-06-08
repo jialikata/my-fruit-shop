@@ -1,23 +1,23 @@
 public class FruitsBasket {
-    Fruit apple;
-    Fruit strawberry;
-    Fruit mango;
+    private Fruit apple;
+    private Fruit strawberry;
+    private Fruit mango;
 
     public FruitsBasket() {
-        this.apple = new Fruit(8);
-        this.strawberry = new Fruit(13);
-        this.mango = new Fruit(20);
+        this.apple = new Fruit(8.0);
+        this.strawberry = new Fruit(13.0);
+        this.mango = new Fruit(20.0);
     }
 
-    public void setAppleWeight(int weight) {
+    public void setAppleWeight(double weight) {
         apple.setWeight(weight);
     }
 
-    public void setStrawberryWeight(int weight) {
+    public void setStrawberryWeight(double weight) {
         strawberry.setWeight(weight);
     }
 
-    public void setMangoWeight(int weight) {
+    public void setMangoWeight(double weight) {
         mango.setWeight(weight);
     }
 
