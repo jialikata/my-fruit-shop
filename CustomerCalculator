@@ -1,12 +1,12 @@
 public class CustomerCalculator {
-    public static double calculatePriceForCustomerA(int appleWeight, int strawberryWeight) {
+    public static double calculatePriceForCustomerA(double appleWeight, double strawberryWeight) {
         FruitsBasket basket = new FruitsBasket();
         basket.setAppleWeight(appleWeight);
         basket.setStrawberryWeight(strawberryWeight);
         return basket.calculatePrice();
     }
 
-    public static double calculatePriceForCustomerB(int appleWeight, int strawberryWeight, int mangoWeight) {
+    public static double calculatePriceForCustomerB(double appleWeight, double strawberryWeight, double mangoWeight) {
         FruitsBasket basket = new FruitsBasket();
         basket.setAppleWeight(appleWeight);
         basket.setStrawberryWeight(strawberryWeight);
@@ -14,7 +14,7 @@ public class CustomerCalculator {
         return basket.calculatePrice();
     }
 
-    public static double calculatePriceForCustomerC(int appleWeight, int strawberryWeight, int mangoWeight) {
+    public static double calculatePriceForCustomerC(double appleWeight, double strawberryWeight, double mangoWeight) {
         FruitsBasket basket = new FruitsBasket();
         basket.setAppleWeight(appleWeight);
         basket.setStrawberryWeight(strawberryWeight);
@@ -24,7 +24,7 @@ public class CustomerCalculator {
         return basket.calculatePrice();
     }
 
-    public static double calculatePriceForCustomerD(int appleWeight, int strawberryWeight, int mangoWeight) {
+    public static double calculatePriceForCustomerD(double appleWeight, double strawberryWeight, double mangoWeight) {
         FruitsBasket basket = new FruitsBasket();
         basket.setAppleWeight(appleWeight);
         basket.setStrawberryWeight(strawberryWeight);
@@ -36,23 +36,23 @@ public class CustomerCalculator {
     public static void main(String[] args) {
         // 测试各个顾客的总价计算
         // 假设顾客购买的斤数...
-        int appleWeightA = 5;
-        int strawberryWeightA = 3;
+        double appleWeightA = 5.0;
+        double strawberryWeightA = 3.0;
         System.out.println("Customer A total price: " + calculatePriceForCustomerA(appleWeightA, strawberryWeightA));
 
-        int appleWeightB = 2;
-        int strawberryWeightB = 4;
-        int mangoWeightB = 1;
+        double appleWeightB = 2.0;
+        double strawberryWeightB = 4.0;
+        double mangoWeightB = 1.0;
         System.out.println("Customer B total price: " + calculatePriceForCustomerB(appleWeightB, strawberryWeightB, mangoWeightB));
 
-        int appleWeightC = 3;
-        int strawberryWeightC = 4;
-        int mangoWeightC = 5;
+        double appleWeightC = 3.0;
+        double strawberryWeightC = 4.0;
+        double mangoWeightC = 5.0;
         System.out.println("Customer C total price: " + calculatePriceForCustomerC(appleWeightC, strawberryWeightC, mangoWeightC));
 
-        int appleWeightD = 6;
-        int strawberryWeightD = 7;
-        int mangoWeightD = 8;
+        double appleWeightD = 6.0;
+        double strawberryWeightD = 7.0;
+        double mangoWeightD = 8.0;
         System.out.println("Customer D total price: " + calculatePriceForCustomerD(appleWeightD, strawberryWeightD, mangoWeightD));
     }
 }
